@@ -13,11 +13,16 @@ pip install pycryptodome
 
 ## Usage Example
 
+```
 text = 'Two One Nine Two'
 key = 'Thats my Kung Fu'
-
-cipher = crypt.Aes.parse_text (text, key)
-
-encrypted_text = cipher.encrypt()
-
-decrypted_text = cipher.decrypt()
+```
+```
+cipher = crypt.Aes.parse_text (text, key) # Constructor.
+```
+```
+encrypted_text = cipher.encrypt() # Byte list of encrypted message.
+```
+```
+decrypted_text = cipher.decrypt()# String of decrypted original message.
+```
